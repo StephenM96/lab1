@@ -1,10 +1,11 @@
-Greeting(props); {
+function Greeting(props) {
 
-    return(
+return(
         <div className="Greetings">
-            <h3>Greetings {props.name}</h3>
-
-            {props.children}
+            <h3>Hello {props.name}</h3>
+            {props.name ? <p>{props.name}</p> : "World!"}
+            {props.children} 
+            {/* this needs to show "support" to the greeting via children? */}
         </div>
     );
 }
