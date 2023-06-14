@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Greeting from '../src/Components/Greeting'
+import Greeting from './Components/Greeting.jsx'
 
 
 function App() {
@@ -34,7 +34,13 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <Greeting name="Stephen Moss"></Greeting>
+
+      <div>
+      <Greeting name="Stephen"> 
+        <p>Greeting message</p>
+      </Greeting>  
+      </div>
+
     </>
   )
 }
